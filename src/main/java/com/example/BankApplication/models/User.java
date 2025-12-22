@@ -12,5 +12,6 @@ import lombok.NoArgsConstructor;
 @Entity
 public class User {
 
+    private String name;
 
 }

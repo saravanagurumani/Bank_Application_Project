@@ -48,7 +48,7 @@ public class UserController {
     // GET PROFILE
     @GetMapping("/profile")
     public ResponseEntity<Map<String, Object>> getProfile(
-            @RequestParam String userName) {
+           @Valid @RequestParam String userName) {
 
         return ResponseEntity.ok(service.getProfile(userName));
     }

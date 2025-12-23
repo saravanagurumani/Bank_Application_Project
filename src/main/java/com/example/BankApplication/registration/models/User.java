@@ -1,7 +1,5 @@
 package com.example.BankApplication.registration.models;
 
-import com.example.BankApplication.account.model.Account;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -17,7 +15,7 @@ public class User
 {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Integer id;
     private String userName;
     private String password;
     private String firstName;

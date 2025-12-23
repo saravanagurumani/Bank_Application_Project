@@ -1,5 +1,7 @@
 package com.example.BankApplication.registration.models;
 
+import com.example.BankApplication.account.model.Account;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -25,4 +27,7 @@ public class User
     private long mobileNum;
     private LocalDateTime regDate;
 
+    @OneToOne(cascade = CascadeType.ALL)
+    @JsonManagedReference
+    private Account account;
 }

@@ -13,7 +13,7 @@ import java.util.Map;
 
 @Service
 @AllArgsConstructor
-public class UserService
+public class UserService implements UserServiceInter
 {
     private UserRepository userRepository;
 

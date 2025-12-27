@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 @AllArgsConstructor
 public class AccountService implements AccountServiceInterface {
 
-    private AccountServiceInterface accountServiceInterface;
+//    private AccountServiceInterface accountServiceInterface;
     private AccountRepository accountRepository;
     @Override
     public String createAccount(Integer id, AccountDTO accountDTO) {
